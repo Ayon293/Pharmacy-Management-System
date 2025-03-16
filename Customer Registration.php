@@ -7,7 +7,7 @@
 </head>
 <body>
   <h2 align="center">Customer Registration</h2>
-  <form action="" method="post">
+  <form action="" method="get">
   <table border="1" align="center" cellpadding="8">
 
  <tr> 
