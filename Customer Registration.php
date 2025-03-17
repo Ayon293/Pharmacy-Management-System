@@ -3,45 +3,46 @@
 <head>
 
  <title>Customer Signup</title>
+ <link rel="stylesheet" href="style.css">
  
 </head>
 <body>
-  <h2 align="center">Customer Registration</h2>
-  <form action="" method="get">
-  <table border="1" align="center" cellpadding="8">
+  <h2 id="heading"align="center">Customer Registration</h2>
+  <form action="" method="post">
+  <table  align="center" >
 
  <tr> 
-  <th>First name:</th>
+  <td><h3>First name:</h3></td>
   <td><input type="text" id="fname" name="fname" required></td>
   </tr>
 
  <tr>
-  <th>Last name:</th>
+  <td><h3>Last name: </h3></td>
   <td><input type="text" id="lname" name="lname" required></td>
  </tr>
 
  <tr>
-  <th> User name:</th>
+  <td><h3>User name: </h3> </td>
   <td><input type="text" id="uname" name="uname" required></td>
   </tr>
 
  <tr>
-  <th>Email:</th>
+  <td><h3>Email:</h3></td>
   <td><input type="email" id="email" name="email" placeholder="xy12@gmail.com" required></td>
  </tr>
 
  <tr>
-  <th>Phone number:</th>
+  <td><h3>Phone number:</h3></td>
   <td><input type="number" id="number" name="number" required></td>
 </tr>
 
  <tr>
-  <th>Date of Birth:</th>
-  <td><input type="date" id="dob" name="dob" required></td>
+  <td><h3>Date of Birth:</h3></td>
+  <td><input type="date" id="dob" name="dob" class="dob" required></td>
 </tr>
 
  <tr>
- <th>Gender:</th>
+ <td><h3>Gender: </h3></td>
  <td>
   <input type="radio" id="male" name="gender" value="male" required>
   <label for="male">Male</label>
@@ -54,19 +55,23 @@
 
 
  <tr>
-  <th>Password:</th>
+  <td ><h3> Password:</h3></td>
   <td><input type="password" id="password" name="password" required></td>
   </tr>
 
  <tr>
- <td colspan="2" align="center">
-  <input type="submit" value="Register">
-  <input type="reset" value="Clear">
+ <td  colspan="2" align="center">
+  <input  type="submit" value="Register" class= "button">
+  <input type="reset" value="Clear" class= "button">
  </td>
  </tr>
 
 
+
 </table>
+<h4 align="center"> Already Have an Account?<a  href=""> Login</a></h4>
+
+
 </form>
 </body>
 </html>
