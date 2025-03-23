@@ -3,7 +3,7 @@
 <head>
 
  <title>Customer Signup</title>
- <link rel="stylesheet" href="cstyle.css">
+ <link rel="stylesheet" href="./css/cstyle.css">
  
 </head>
 <body>
