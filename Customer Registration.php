@@ -3,12 +3,12 @@
 
 <head>
   <title>Customer Signup</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css2/style.css">
 </head>
 
 <body>
   <h2  align="center">Customer Registration</h2>
-  <form action="https://www.w3schools.com/" method="post" onsubmit="return validation()">
+  <form action="" method="post" onsubmit="return validation()">
     <table align="center">
       
 
