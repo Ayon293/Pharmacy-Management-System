@@ -2,6 +2,8 @@
 include '../control2/validation.php'; 
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +79,7 @@ include '../control2/validation.php';
     </tr>
 
     <tr>
-     <td><h3>Upload File:</h3></td>
+     <td><h3>Upload Image:</h3></td>
      <td>
       <input type="file" name="uploadfile" id="uploadfile" >
       <p class="error"><?php echo $fileErr; ?></p>
@@ -95,16 +97,16 @@ include '../control2/validation.php';
 
     <tr>
       <td colspan="2" align="center">
-        <input type="submit" value="Register" class="button">
+        <input type="submit" value="Register" class="button" name="register">
         <input type="submit" name="clear" value="Clear" class="button" onclick="clearErrors()">
       </td>
     </tr>
 
   </table>
-  <h4 align="center">Already Have an Account? <a href="">Login</a></h4>
+  <h4 align="center">Already Have an Account? <a href="./login.php">Login</a></h4>
 </form>
-<!--
-<script src="../js/script.js"></script> -->
+
+<script src="../js/script.js"></script> 
 </body>
 
 </html>
