@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $password = $_POST["password"];
             $picture = $pictureName;
 
-            $checkUsername = "SELECT * FROM user WHERE UserName = '$uname'";
+            $checkUsername = "SELECT * FROM user WHERE Username = '$uname'";
             $result = mysqli_query($conn, $checkUsername);
 
             if (mysqli_num_rows($result) > 0) {

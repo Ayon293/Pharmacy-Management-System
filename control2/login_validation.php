@@ -11,16 +11,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $query = "SELECT * FROM user WHERE UserName = '$uname' AND Password = '$password'";
-    $result = mysqli_query($conn, $query);
+ 
+    $adminQuery = "SELECT * FROM admin WHERE username='$uname' AND password='$password'";
+    $adminResult = mysqli_query($conn, $adminQuery);
 
-    if (mysqli_num_rows($result) == 1) {
+    if (mysqli_num_rows($adminResult) == 1) {
+    $_SESSION["admin_username"] = $uname;
+    header("Location: adminhomepage.php");
+    exit();
+}
+
+    
+    $userQuery = "SELECT * FROM user WHERE username='$uname' AND password='$password'";
+    $userResult = mysqli_query($conn, $userQuery);
+
+    if (mysqli_num_rows($userResult) == 1) {
         $_SESSION["username"] = $uname;
-        header("Location: Dashboard.php"); 
-        
-    } else {
-        echo "<script>alert('Invalid username or password');</script>";
+        header("Location: Dashboard.php");
+        exit();
     }
+
+  
+    echo "<script>alert('Invalid username or password');</script>";
 
     closeConn($conn);
 }
